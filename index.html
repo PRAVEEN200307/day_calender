@@ -3,14 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-
-    <!-- TailwindCSS -->
+    <title>Day Calender</title>
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
-  <body>
-    <!-- Write your HTML here -->
-    <div id="app" class="text-3xl font-bold">Hello Vite HTML & Tailwind!</div>
+  <body class="bg-slate-200  w-screen h-screen flex  justify-center my-5">
+    <div class="bg-white p-5 min-w-80 h-fit">
+      <h1 class="text-center text-violet-900 font-bold sm:text-2xl"> Tamil Day Calender</h1>
+      <div class="flex justify-end gap-4 text-slate-500">
+        <a href="https://github.com/PRAVEEN200307/day_calender" target="_blank" class=" hover:text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" alt="github" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5C64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9c26.4 39.1 77.9 32.5 104 26c5.7-23.5 17.9-44.5 34.7-60.8c-140.6-25.2-199.2-111-199.2-213c0-49.5 16.3-95 48.3-131.7c-20.4-60.5 1.9-112.3 4.9-120c58.1-5.2 118.5 41.6 123.2 45.3c33-8.9 70.7-13.6 112.9-13.6c42.4 0 80.2 4.9 113.5 13.9c11.3-8.6 67.3-48.8 121.3-43.9c2.9 7.7 24.7 58.3 5.5 118c32.4 36.8 48.9 82.7 48.9 132.3c0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9c177.1-59.7 304.6-227 304.6-424.1c0-247.2-200.4-447.3-447.5-447.3"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/praveen-kumar-311514297/" target="_blank" class=" hover:text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" alt="linkedIn" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4.75 1.875a2.125 2.125 0 1 0 0 4.25a2.125 2.125 0 0 0 0-4.25m-2 6A.125.125 0 0 0 2.625 8v13c0 .069.056.125.125.125h4A.125.125 0 0 0 6.875 21V8a.125.125 0 0 0-.125-.125zm6.5 0A.125.125 0 0 0 9.125 8v13c0 .069.056.125.125.125h4a.125.125 0 0 0 .125-.125v-7a1.875 1.875 0 1 1 3.75 0v7c0 .069.056.125.125.125h4a.125.125 0 0 0 .125-.125v-8.62c0-2.427-2.11-4.325-4.525-4.106a7.168 7.168 0 0 0-2.169.548l-1.306.56V8a.125.125 0 0 0-.125-.125z"/></svg>
+        </a>
+      </div>
+      <div class="flex flex-col gap-3 mt-4">
+         <label for="userData" class="sm:text-2xl">Select Data</label>
+         <input type="date" name="date" id="userData" min="2005-01-01" max="2024-31-12"
+         class="border py-2 pl-2 shadow-sm text-gray-500 shadow-gray-500">
+      </div>
+      <div class=" mt-5 p-2 bg-blue-200 rounded">
+         <img src="" alt="Calender" class="rounded" id="dayImage">
+      </div>
+    </div>    
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
